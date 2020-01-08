@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{
+  font-family: whitney;
+  src: url(assets/fonts/whitney-light.otf);
+  src: url(assets/fonts/whitney-light.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body { height: 100%; }
+body { margin: 0; max-width: 2000px; width: 100%; font-family: "whitney", "Helvetica Neue", sans-serif; }
+
+

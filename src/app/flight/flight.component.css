@@ -1,0 +1,33 @@
+.main{
+  background-color: #11172b;
+  color: #ffffff;
+}
+.topHeading{
+  text-align: center;
+  margin: 0px 0px 0px 50px;
+}
+.logo{
+margin-left: 50px;
+}
+*{
+  font-family: 'whitney','arial', 'sans-serif';
+}
+.container{
+  margin: 25px 50px 75px 100px;
+}
+.formContainer{
+  display: flex;
+  flex-direction: column;
+}
+.searchform{
+  display: flex;
+  flex-direction: row;
+}
+table {
+  width: 100%;
+}
+.filterForm{
+ margin-left: 20px;
+ margin-top: 10px;
+  
+}

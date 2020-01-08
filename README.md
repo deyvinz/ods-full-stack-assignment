@@ -1,27 +1,51 @@
-# DeltaFlights
+# ODS Full Stack Coding Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+## Assignment
 
-## Development server
+Create a web application that allows a user to search for flights and display the results in a tabular view.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+1. Allow the user to enter a station (destination or origin) to search flights. Display the results in a table.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Provide an auto-suggest feature for station.
 
-## Build
+3. Provide two RESTful endpoints supporting the functionality listed in steps 1 and 2.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Datasource
 
-## Running unit tests
+A zipped CSV file of flights is available in /data/flights.csv. Each row in the CSV file represents a flight.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Implementation
 
-## Running end-to-end tests
+Use any technologies you want. If you are familiar with Python and/or Angular please use these for your app. You can use any additional technologies/frameworks/dbs/libraries you would like to.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+To submit your solution, clone this repo and push to a personal github repo and submit the link.
 
-## Further help
+Please update the README
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Return your solution within 1 week - this is to provide a buffer for busy schedules.
+
+Please ask any questions you have.
+
+
+------------------------------------------------------------------------------------------------------------
+-----------------------------SOLUTION-----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+
+## Framework & Technology used
+Front end - Angular and Angular Material
+Back end - API >>>>> Python 
+          Database >>>> SQLite Database
+
+API File: server.py
+Database file: delta.db
+
+## API Routes
+Get stations for auto-suggest - http://127.0.0.1:5002/stations
+Get Flights by station name - http://127.0.0.1:5002/flights/{station}
+
+## UI Routes
+shows the page that searches for flights -  http://localhost:4200/search 
+shows  flights in a table - http://localhost:4200/search/{stattion}
